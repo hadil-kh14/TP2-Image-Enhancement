@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>994</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>220</y>
+      <width>981</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Egalisation d`histogramme</string>
+    </property>
+    <widget class="QPushButton" name="Apply">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Appliquer</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: blue</string>
+     </property>
+     <property name="text">
+      <string>Image Egalisée</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>20</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:blue
+
+</string>
+     </property>
+     <property name="text">
+      <string>Histogramme de l'image égalisée</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="EqualizedImg">
+     <property name="geometry">
+      <rect>
+       <x>244</x>
+       <y>49</y>
+       <width>161</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="EqualizedHist">
+     <property name="geometry">
+      <rect>
+       <x>464</x>
+       <y>49</y>
+       <width>461</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>341</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Seuillage</string>
+    </property>
+    <widget class="QPushButton" name="Validate_1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Binary">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seuillage binaire</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Otsu">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seuillage d'Otsu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red
+
+</string>
+     </property>
+     <property name="text">
+      <string>Image Seuillée</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ThresholdingImg">
+     <property name="geometry">
+      <rect>
+       <x>164</x>
+       <y>45</y>
+       <width>161</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>55</y>
+       <width>151</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>981</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Image originale</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: purple;</string>
+     </property>
+     <property name="text">
+      <string>Image Originale</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>20</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: purple;</string>
+     </property>
+     <property name="text">
+      <string>Histogramme de l'image originale</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="OriginalImg">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>50</y>
+       <width>171</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="OriginalHist">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>461</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Browse">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Parcourir</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>349</x>
+      <y>439</y>
+      <width>311</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Filtrage</string>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red</string>
+     </property>
+     <property name="text">
+      <string>Image Filtrée</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Gaussian">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtre Gaussien</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Mean">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtre Moyenneur</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Validate_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Median">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtre Médian</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FilteredImg">
+     <property name="geometry">
+      <rect>
+       <x>154</x>
+       <y>45</y>
+       <width>141</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>440</y>
+      <width>311</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Opérations géométriques</string>
+    </property>
+    <widget class="QRadioButton" name="Rotation">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rotation</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Extraction">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Extraction</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Zoom">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aggrandissement</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Validate_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red
+
+</string>
+     </property>
+     <property name="text">
+      <string>Image Augmentée</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AugmentedImg">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>45</y>
+       <width>141</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>994</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
