@@ -50,6 +50,3 @@ The application displays processed images and their histograms in an interactive
 
 ## 👩‍💻 Author
 Hadil Khaireddine
-
-## ▶️ How to Run
-1. Install dependencies:
